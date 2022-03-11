@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.card{
+    display: flex;
+    width: calc((100% - 60px) / 4);
+    flex-direction: column;
+    align-items: center;
+    background-color: #61737A;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    row-gap: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    height: fit-content;
+}
+
+.filter-delete{
+    display: flex;
+    align-self: flex-end;
+    padding: 0 20px;
+    color: #FFFFFF;
+}
+
+.filter-icon{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.delete-icon{
+    cursor: pointer;
+}
+
+.card-city{
+    color: #cadee7;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.card-temp{
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.weather-icon{
+    margin: -20px 0;
+}
+
+.card-weather-description{
+    color: #cadee7;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-expand{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20px; 
+}
+
+.card-min-max{
+    display: flex;
+    align-self: flex-start;
+    row-gap: 5px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.card-min{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.min-temperature,
+.max-temperature,
+.sunset,
+.sunrise,
+.wind{
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+}
+
+.min-temperature-value,
+.max-temperature-value,
+.sunset-value,
+.sunrise-value,
+.wind-value{
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.card-max{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.card-sunset-sunrise{
+    display: flex;
+    justify-content: flex-start;
+    row-gap: 5px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.card-sunset{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.card-sunrise{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.card-expand .card-wind{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 920px) {
+    .card {
+      width: calc((100% - 20px) / 2);
+    }
+  }
+  
+@media screen and (max-width: 600px) {
+    .card {
+      width: 100%;
+    }
+  }

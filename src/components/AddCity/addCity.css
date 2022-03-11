@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.modal-city-background{
+  max-width: 90vw;
+  position: fixed;
+  display: flex;
+  align-self: center;
+  margin: auto;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+}
+
+.modal-city-container{
+  max-height: 30em;
+  margin:auto;
+  max-width:45em;
+  width: 80%;
+  height: 80%;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.title-city-section-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.title-city-section-wrapper::after{
+  content: '';
+  display: flex;
+  width: 100%;
+  height: 1px;
+  opacity: 0.5;
+  background-color: #8e9ca7;
+  align-self: center;
+}
+
+.title-city-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-city{
+    color: #2a465c;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-city-CloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title-city-CloseBtn button {
+  background-color: transparent;
+  color: #8e9ca7;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-city-container .dropdown-wrapper {
+  flex: 50%;
+}
+
+.dropdown{
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  height: 50px;
+}
+
+.dropdown::before{
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #333;
+  right: 20px;
+  top: 15px;
+  z-index: 250;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.dropdown.active::before{
+  top: 22px;
+  transform: rotate(-225deg);
+}
+
+.dropdown label{
+  top: -35px;
+  position: relative;
+  font-size: 12px;
+  color: #8e9ca7;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dropdown input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  outline: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+.dropdown .textBox::placeholder{
+  font-size: 15px;
+  color: #8e9ca7;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dropdown .option{
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 30px 30px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  display: none;
+}
+
+.dropdown .option div{
+  padding: 12px 20px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #8e9ca7;
+  font-family: 'Poppins', sans-serif;
+}
+
+.dropdown .option div:hover{
+  background: #103B4D;
+  color: #fff;
+}
+
+.modal-city-container .footer-wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-city-container .footer-wrapper::before{
+  content: '';
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  height: 1px;
+  opacity: 0.5;
+  background-color: #8e9ca7;   
+}
+
+.modal-city-container .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modal-city-container .footer button {
+  width: 130px;
+  height: 35px;
+  margin: 10px;
+  border-radius: 20px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+.modal-city-container #cancelBtn {
+  background-color: #FFFFFF;
+  color: #4C4B4E;
+  border: 2px solid black;
+  border-color: #e7e7e7;
+}
+
+.modal-city-container .footer .apply-button{
+  background: #06202c;
+  border: none;
+  color: #FFFFFF;    
+}
+
